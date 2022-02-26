@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(0, 136, 255);
+}
+
+#logout{
+    float: right;
+    margin-top: -75px;
+    font-size: 15px;
+    margin-right: 700px;
+}
+
+#output
+{
+	padding: 10px; width:80%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+}
+
+.roomname
+{
+	cursor: pointer;
+	font-size: 20px;
+}
+

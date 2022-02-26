@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Kwitter </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="kwitter.css">
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"> </script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyDB3epywBWtqB6Qz9QSkhnxBvqv-TETGi0",
+                authDomain: "adv-kwitter-90059.firebaseapp.com",
+                databaseURL: "https://adv-kwitter-90059-default-rtdb.firebaseio.com",
+                projectId: "adv-kwitter-90059",
+                storageBucket: "adv-kwitter-90059.appspot.com",
+                messagingSenderId: "613297158968",
+                appId: "1:613297158968:web:51992c0e73f8811f585fcd"
+              };
+    
+                firebase.initializeApp(firebaseConfig);
+    
+            </script>
+    </head>
+    <body>
+        <div id = "output" class = "col-lg-5 col-sm-8 col-xs-11 login_div1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1> Welcome!!! This is Kwitter </h1>
+            <br>
+            <br>
+            <br>
+            <input type="text" id="username" placeholder="Enter Your Username" class="form-control">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id="user_login_button" onclick="user_login()" class = "btn btn-warning"> Get Started </button>
+        </div>
+        <img id = "img_social" src = "images.jpg">
+        <script src="kwitter.js" async defer></script>
+    </body>
+</html>

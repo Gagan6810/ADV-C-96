@@ -1,0 +1,21 @@
+body{
+    background-color:aqua;
+}
+
+#output{
+    background-color:aqua;
+    color:orange;
+    height: 1079px;
+    width: 30%;
+}
+
+#user_login_button{
+    height:50px;
+    width:200px;
+    font-size: 20px;
+}
+
+#img_social{
+    height:1079px;
+    width:70%;
+}

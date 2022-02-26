@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>  
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="kwitter_room.css">
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"> </script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+        <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDB3epywBWtqB6Qz9QSkhnxBvqv-TETGi0",
+            authDomain: "adv-kwitter-90059.firebaseapp.com",
+            databaseURL: "https://adv-kwitter-90059-default-rtdb.firebaseio.com",
+            projectId: "adv-kwitter-90059",
+            storageBucket: "adv-kwitter-90059.appspot.com",
+            messagingSenderId: "613297158968",
+            appId: "1:613297158968:web:51992c0e73f8811f585fcd"
+          };
+
+            firebase.initializeApp(firebaseConfig);
+
+        </script>
+    </head>
+    <body>
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">  Logout  </button>
+        <center>
+        <div style="width: 30%; height: 50%; margin-top: 75px;">
+                <h1 class = header>
+                    Kwitter
+                    <sup>
+                        <img src="m2.png" style="height: 35px; width: 35px;">
+                    </sup>
+                </h1>
+                <br>
+                <br>
+                <h2 id="welcome"></h2>
+                <br>
+                <label> #Add Room: </label>
+            <input id = "roomname_input" type = "text" placeholder="Enter the Room Name and Create a Room" class="form-control">
+            <br>
+            <button class = "btn btn-success" onclick="addroom()"> #Add Room </button>
+            <br>
+            <h2 style="color:aliceblue;"> #TRENDING ROOMS </h2>
+            <div id="output">
+
+            </div>
+        </div>
+        </center>
+        <script src="kwitter_room.js" async defer></script>
+    </body>
+</html>
